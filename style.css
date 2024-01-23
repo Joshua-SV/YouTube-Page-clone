@@ -7,6 +7,10 @@ body{
     margin: 0;
 }
 
+.videos{
+    background-color: #eee;
+}
+
 .video-sec{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
@@ -76,4 +80,37 @@ body{
     margin-bottom: .1rem;
     text-decoration: none;
     color: black;
+}
+
+.video-channel-name{
+    margin-bottom: .1rem;
+    text-decoration: none;
+    transition: color 150ms ease-out;
+}
+
+.video-channel-name:hover{
+    color: black;
+}
+
+.video-channel-name, .video-metadata{
+    color: #555;
+}
+
+
+.video-sec-title{
+    grid-column: 1 / -1;
+    margin: -.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+}
+
+.video-sec-close{
+    border: none;
+    background: none;
+    font-size: 2rem;
+    padding: 0;
+    color: #555;
+    cursor: pointer;
 }
